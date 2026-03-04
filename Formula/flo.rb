@@ -1,8 +1,8 @@
 class Flo < Formula
   desc "TUI SNMP interface monitor with identity management and dashboard engines"
   homepage "https://github.com/tonhe/flo"
-  url "https://github.com/tonhe/flo/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "ec5327cc1ba9fb2a2cdc71072597127fbec4eb1a3f212a56eef5e6f24d2beb47"
+  url "https://github.com/tonhe/flo/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "9bfe4098c7ad3828af12871c6a520d90b073e1b44cf5f34427369fc972205aa9"
   license "MIT"
 
   depends_on "go" => :build
