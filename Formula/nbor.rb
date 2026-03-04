@@ -1,16 +1,16 @@
 class Nbor < Formula
   desc "TUI tool for discovering network neighbors via CDP and LLDP"
   homepage "https://github.com/tonhe/nbor"
-  version "0.4.2"
+  version "0.4.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/tonhe/nbor/releases/download/v#{version}/nbor_#{version}_darwin_arm64.tar.gz"
-      sha256 "51e7d0259e7fdcd5e469dd0dfd45910be85f61133104a4589d43cb28af708ada"
+      sha256 "78c9f6de1423f44564c7aff2c7e61946b9106269b812cd777fc35a737ae128ec"
     elsif Hardware::CPU.intel?
       url "https://github.com/tonhe/nbor/releases/download/v#{version}/nbor_#{version}_darwin_amd64.tar.gz"
-      sha256 "7365208e1135784c94dd31cef87643f70ca18d3d766f771a5c72b414b97026f7"
+      sha256 "9675a7720fa397bb47bbe0bca4a6777830e8923d5efa400c9a75a6156c9c934e"
     end
   end
 
