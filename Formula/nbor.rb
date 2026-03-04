@@ -2,7 +2,7 @@ class Nbor < Formula
   desc "TUI tool for discovering network neighbors via CDP and LLDP"
   homepage "https://github.com/tonhe/nbor"
   url "https://github.com/tonhe/nbor/archive/refs/tags/v0.4.2.tar.gz"
-  sha256 "af4fdd6606b277d900e4db0372b4a02303943ea7f3cd2059feaedf2440624230"
+  sha256 "2abf60553c6a19886732add559a9a72ef7242af8b637c470eb593c5d72d992a0"
   license "MIT"
 
   depends_on "go" => :build
