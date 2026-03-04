@@ -23,7 +23,14 @@ brew install tonhe/tap/flo
 
 ### `nbor`
 
-*Coming soon.*
+[![GitHub](https://img.shields.io/badge/tonhe-nbor-grey?logo=github&color=181717)](https://github.com/tonhe/nbor)
+[![Formula](https://img.shields.io/badge/Formula-nbor-grey?logo=ruby&color=FBB040&logoColor=CC342D)](/Formula/nbor.rb)
+
+TUI tool for discovering network neighbors via CDP and LLDP.
+
+```sh
+brew install tonhe/tap/nbor
+```
 
 ---
 
