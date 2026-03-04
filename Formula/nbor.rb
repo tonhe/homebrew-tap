@@ -1,30 +1,20 @@
 class Nbor < Formula
   desc "TUI tool for discovering network neighbors via CDP and LLDP"
   homepage "https://github.com/tonhe/nbor"
-  version "0.4.3"
+  url "https://github.com/tonhe/nbor/archive/refs/tags/v0.4.2.tar.gz"
+  sha256 "PLACEHOLDER_WILL_BE_UPDATED_ON_RELEASE"
   license "MIT"
 
-  on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/tonhe/nbor/releases/download/v#{version}/nbor_#{version}_darwin_arm64.tar.gz"
-      sha256 "78c9f6de1423f44564c7aff2c7e61946b9106269b812cd777fc35a737ae128ec"
-    elsif Hardware::CPU.intel?
-      url "https://github.com/tonhe/nbor/releases/download/v#{version}/nbor_#{version}_darwin_amd64.tar.gz"
-      sha256 "9675a7720fa397bb47bbe0bca4a6777830e8923d5efa400c9a75a6156c9c934e"
-    end
-  end
+  depends_on "go" => :build
 
   def install
-    bin.install "nbor"
+    system "go", "build", *std_go_args
   end
 
   def caveats
     <<~EOS
       nbor requires root privileges for packet capture.
       Run with: sudo nbor
-
-      If macOS kills the binary on first run, remove the quarantine flag:
-        sudo xattr -d com.apple.quarantine #{bin}/nbor
     EOS
   end
 
