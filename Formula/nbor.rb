@@ -7,10 +7,10 @@ class Nbor < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/tonhe/nbor/releases/download/v#{version}/nbor_#{version}_darwin_arm64.tar.gz"
-      sha256 "PLACEHOLDER_WILL_BE_UPDATED_ON_RELEASE"
+      sha256 "51e7d0259e7fdcd5e469dd0dfd45910be85f61133104a4589d43cb28af708ada"
     elsif Hardware::CPU.intel?
       url "https://github.com/tonhe/nbor/releases/download/v#{version}/nbor_#{version}_darwin_amd64.tar.gz"
-      sha256 "PLACEHOLDER_WILL_BE_UPDATED_ON_RELEASE"
+      sha256 "7365208e1135784c94dd31cef87643f70ca18d3d766f771a5c72b414b97026f7"
     end
   end
 
