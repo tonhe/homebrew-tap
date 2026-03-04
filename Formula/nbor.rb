@@ -22,6 +22,9 @@ class Nbor < Formula
     <<~EOS
       nbor requires root privileges for packet capture.
       Run with: sudo nbor
+
+      If macOS kills the binary on first run, remove the quarantine flag:
+        sudo xattr -d com.apple.quarantine #{bin}/nbor
     EOS
   end
 
