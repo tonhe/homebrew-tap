@@ -1,4 +1,4 @@
-class Via < Formula
+class Viaduct < Formula
   desc "Modern traceroute with real-time terminal UI"
   homepage "https://github.com/tonhe/viaduct"
   url "https://github.com/tonhe/viaduct/archive/refs/tags/v0.0.1.tar.gz"
@@ -13,7 +13,7 @@ class Via < Formula
       -X main.version=#{version}
       -X main.buildVersion=#{tap.user}
     ]
-    system "go", "build", *std_go_args(ldflags:), "./cmd/via"
+    system "go", "build", *std_go_args(ldflags:, output: bin/"via"), "./cmd/via"
   end
 
   test do
