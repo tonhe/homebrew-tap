@@ -40,7 +40,7 @@ brew install tonhe/tap/nbor
 Modern traceroute with real-time terminal UI.
 
 ```sh
-brew install tonhe/tap/via
+brew install tonhe/tap/viaduct
 ```
 
 ---
