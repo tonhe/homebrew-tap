@@ -32,6 +32,17 @@ TUI tool for discovering network neighbors via CDP and LLDP.
 brew install tonhe/tap/nbor
 ```
 
+### `via`
+
+[![GitHub](https://img.shields.io/badge/tonhe-viaduct-grey?logo=github&color=181717)](https://github.com/tonhe/viaduct)
+[![Formula](https://img.shields.io/badge/Formula-via-grey?logo=ruby&color=FBB040&logoColor=CC342D)](/Formula/via.rb)
+
+Modern traceroute with real-time terminal UI.
+
+```sh
+brew install tonhe/tap/via
+```
+
 ---
 
 [tap_badge]: https://img.shields.io/badge/brew%20tap-tonhe/tap-orange?logo=Homebrew&color=FBB040
