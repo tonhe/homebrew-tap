@@ -1,8 +1,8 @@
 class Viaduct < Formula
   desc "Modern traceroute with real-time terminal UI"
   homepage "https://github.com/tonhe/viaduct"
-  url "https://github.com/tonhe/viaduct/archive/refs/tags/v0.0.2.tar.gz"
-  sha256 "34577b3d4e4538310d46daf16baad815c5242e9e457f23ce83968965d6243fe1"
+  url "https://github.com/tonhe/viaduct/archive/refs/tags/v0.0.3.tar.gz"
+  sha256 "754ac46d234c07fc175c4652cd06f9f9bc4814b5d80dfd31b6594f349c76a918"
   license "MIT"
 
   depends_on "go" => :build
